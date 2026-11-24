@@ -73,6 +73,11 @@ Direct download links are `https://modelscope.cn/models/Comfy-Org/Qwen-Image-2.1
 
 ### In the UI
 
+![Workflow picker](docs/picker.png)
+
+> The picker lives in the composer, next to the model selector. Hover a family with `›` (or press `→`) to open its variants in a side flyout.
+> This screenshot is from a machine where all six legacy workflows passed the model check; on a fresh install they stay greyed out until `comfyui_check` confirms the models.
+
 A workflow picker sits next to the model selector in the composer (bottom right). Hover a family with `›` to open its variants on the side; click to choose. The choice is per-session and persisted in `%USERPROFILE%\.dsh\dsh-comfyui-use-ui.json`.
 
 While drawing, a slim progress bar appears above the composer. The finished image arrives in the chat body as a normal Markdown image.
