@@ -1,0 +1,58 @@
+{
+ "SaveImage": [
+  "29"
+ ],
+ "ResolutionSelector": [
+  "49"
+ ],
+ "CLIPTextEncode": [
+  "30:6"
+ ],
+ "EmptyLatentImage": [
+  "30:5"
+ ],
+ "KSampler": [
+  "30:3"
+ ],
+ "VAEDecode": [
+  "30:8"
+ ],
+ "UNETLoader": [
+  "30:10"
+ ],
+ "CLIPLoader": [
+  "30:11"
+ ],
+ "VAELoader": [
+  "30:12"
+ ],
+ "ConditioningZeroOut": [
+  "30:13"
+ ],
+ "LoraLoaderModelOnly": [
+  "30:15"
+ ],
+ "TextGenerate": [
+  "30:16"
+ ],
+ "StringConcatenate": [
+  "30:17",
+  "30:27"
+ ],
+ "PrimitiveStringMultiline": [
+  "30:18",
+  "30:19"
+ ],
+ "PreviewAny": [
+  "30:20"
+ ],
+ "ComfySwitchNode": [
+  "30:21",
+  "30:22",
+  "30:28"
+ ],
+ "PrimitiveBoolean": [
+  "30:23",
+  "30:24"
+ ]
+}

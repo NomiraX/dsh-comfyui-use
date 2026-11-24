@@ -1,0 +1,16 @@
+{
+  "_comment": "复制到 %DSH_HOME%\\dsh-comfyui-use-config.json（默认 C:\\Users\\<你>\\.dsh\\dsh-comfyui-use-config.json）后按自己的路径改。全部字段可选；不填的会自动探测。",
+  "port": 18189,
+  "comfyRoot": "",
+  "comfyPython": "",
+  "comfyMainPy": "",
+  "comfyWorkdir": "",
+  "modelPathsYaml": "",
+  "inputDir": "",
+  "sharedOutputDir": "",
+  "outputDir": "~/Pictures/dsh-comfyui",
+  "comfyArgs": [],
+  "idleShutdownMs": 60000,
+  "startTimeoutMs": 240000,
+  "timeoutMs": 900000
+}

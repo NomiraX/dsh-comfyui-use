@@ -1,0 +1,59 @@
+{
+ "PrimitiveStringMultiline": [
+  "1"
+ ],
+ "LoadImage": [
+  "3"
+ ],
+ "LayerUtility: ImageScaleByAspectRatio V2": [
+  "4"
+ ],
+ "UNETLoader": [
+  "11"
+ ],
+ "ModelAttentionBackend": [
+  "12"
+ ],
+ "QwenImage21Cache": [
+  "13"
+ ],
+ "CLIPLoader": [
+  "14"
+ ],
+ "VAELoader": [
+  "15"
+ ],
+ "TextEncodeQwenImage21": [
+  "16"
+ ],
+ "GetImageSize": [
+  "17"
+ ],
+ "PrimitiveInt": [
+  "18"
+ ],
+ "EmptyLatentImage": [
+  "19"
+ ],
+ "VAEDecode": [
+  "21"
+ ],
+ "SaveImage": [
+  "22"
+ ],
+ "RandomNoise": [
+  "25"
+ ],
+ "KSamplerSelect": [
+  "26"
+ ],
+ "CFGGuider": [
+  "27"
+ ],
+ "ManualSigmas": [
+  "28"
+ ],
+ "SamplerCustomAdvanced": [
+  "29"
+ ]
+}

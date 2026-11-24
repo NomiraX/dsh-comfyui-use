@@ -1,0 +1,41 @@
+{
+ "LoadImage": [
+  "1"
+ ],
+ "SaveImage": [
+  "9"
+ ],
+ "ImageCompare": [
+  "65"
+ ],
+ "VAEEncodeTiled": [
+  "66:48"
+ ],
+ "JoinImageWithAlpha": [
+  "66:50"
+ ],
+ "VAELoader": [
+  "66:51"
+ ],
+ "UNETLoader": [
+  "66:52"
+ ],
+ "KSampler": [
+  "66:54"
+ ],
+ "VAEDecodeTiled": [
+  "66:55"
+ ],
+ "ResizeImageMaskNode": [
+  "66:57"
+ ],
+ "SeedVR2Preprocess": [
+  "66:58"
+ ],
+ "SeedVR2PostProcessing": [
+  "66:59"
+ ],
+ "SeedVR2Conditioning": [
+  "66:61"
+ ]
+}

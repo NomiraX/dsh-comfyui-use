@@ -1,0 +1,59 @@
+{
+  "name": "dsh-comfyui-use",
+  "version": "0.2.1",
+  "description": "Call your local ComfyUI from DeepSeek Harness: one official Qwen-Image 2.1 workflow (text-to-image + edit) out of the box, import your own saved workflows, prompt-writing skill bundled, background start/stop with idle shutdown.",
+  "meta": {
+    "title": "本地 ComfyUI 工作流",
+    "description": "用你 ComfyUI 里已经调好的 6 个工作流画图，输入框下方可切换，出图时聊天框有绘图动画。"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "slots"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib",
+    "api-workflows",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "dsh-comfyui-use-config.example.json"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "comfyui",
+    "image-generation",
+    "workflow"
+  ],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/NomiraX/dsh-comfyui-use.git" },
+  "homepage": "https://github.com/NomiraX/dsh-comfyui-use#readme",
+  "bugs": { "url": "https://github.com/NomiraX/dsh-comfyui-use/issues" }
+}
+
+

@@ -1,0 +1,252 @@
+{
+ "120": {
+  "inputs": {
+   "add_noise": "enable",
+   "noise_seed": [
+    "132",
+    0
+   ],
+   "steps": 16,
+   "cfg": 3,
+   "sampler_name": "er_sde",
+   "scheduler": "simple",
+   "start_at_step": 0,
+   "end_at_step": 12,
+   "return_with_leftover_noise": "enable",
+   "model": [
+    "158",
+    0
+   ],
+   "positive": [
+    "129",
+    0
+   ],
+   "negative": [
+    "130",
+    0
+   ],
+   "latent_image": [
+    "126",
+    0
+   ]
+  },
+  "class_type": "KSamplerAdvanced",
+  "_meta": {
+   "title": "K采样器（高级）",
+   "cnr_id": "comfy-core",
+   "ver": "0.12.3"
+  }
+ },
+ "121": {
+  "inputs": {
+   "upscale_method": "bicubic",
+   "scale_by": 1.2,
+   "samples": [
+    "120",
+    0
+   ]
+  },
+  "class_type": "LatentUpscaleBy",
+  "_meta": {
+   "title": "缩放Latent（比例）",
+   "cnr_id": "comfy-core",
+   "ver": "0.12.3"
+  }
+ },
+ "122": {
+  "inputs": {
+   "add_noise": "enable",
+   "noise_seed": 666,
+   "steps": 25,
+   "cfg": 3,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "start_at_step": 9,
+   "end_at_step": 25,
+   "return_with_leftover_noise": "disable",
+   "model": [
+    "158",
+    0
+   ],
+   "positive": [
+    "129",
+    0
+   ],
+   "negative": [
+    "130",
+    0
+   ],
+   "latent_image": [
+    "121",
+    0
+   ]
+  },
+  "class_type": "KSamplerAdvanced",
+  "_meta": {
+   "title": "K采样器（高级）",
+   "cnr_id": "comfy-core",
+   "ver": "0.12.3"
+  }
+ },
+ "126": {
+  "inputs": {
+   "width": [
+    "127",
+    0
+   ],
+   "height": [
+    "127",
+    1
+   ],
+   "batch_size": 1
+  },
+  "class_type": "EmptyLatentImage",
+  "_meta": {
+   "title": "空Latent图像",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "127": {
+  "inputs": {
+   "aspect_ratio": "9:16 (Portrait Widescreen)",
+   "megapixels": 1,
+   "multiple": 16
+  },
+  "class_type": "ResolutionSelector",
+  "_meta": {
+   "title": "分辨率选择器",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "128": {
+  "inputs": {
+   "vae_name": "flux2-vae.safetensors"
+  },
+  "class_type": "VAELoader",
+  "_meta": {
+   "title": "加载VAE",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "129": {
+  "inputs": {
+   "text": "一位年轻女子侧身而立，乌黑柔顺的长发如瀑布般垂落于肩头，几缕发丝轻拂在脸颊旁，发间点缀着细小的发饰，增添了几分古典韵味，她身穿一袭深灰色的传统汉服，衣料质感细腻，带有微微的光泽感，领口和袖口处有精致的暗纹刺绣，衣物贴合身形，勾勒出纤细的轮廓，她右手轻握一把古朴的油纸伞，伞柄为天然竹制，表面纹理清晰可见，伞面呈灰白色，边缘略显磨损，透露出岁月痕迹，伞顶装饰有黑色编织网状结构，形成独特的视觉焦点，她的姿态优雅从容，头部微微侧转，目光望向远方，眼神清澈而深邃，带着一丝淡淡的忧郁与沉思，嘴唇微启，仿佛正欲低语或沉浸在某种思绪中，整体画面以人物为主体，前景突出人物的面部轮廓、手部细节和伞柄的质感，中景呈现她半身的服饰和身体姿态，背景则是一片朦胧的自然景观，模糊的绿色植被和石墙构成柔和的虚化效果，营造出深远的空间感，构图采用经典的三分法，人物位于画面左侧，留出右侧大片空白，引导视线延伸至远处，同时利用伞柄的垂直线条与人物的斜向轮廓形成对比，增强画面的稳定性和视觉张力，光线柔和且均匀，来自左上方的漫射光使人物面部呈现出自然的明暗过渡，阴影细腻不突兀，高光集中在额角、鼻梁和手背，凸显皮肤的光滑质感，整体色调偏冷，以灰绿、深灰和墨色为主，营造出静谧、清冷且略带诗意的氛围，光影层次丰富但不过度强烈，呈现出一种电影级的胶片质感，仿佛是用专业相机在阴天室外拍摄，镜头带有轻微的颗粒感和色彩偏移，模拟真实摄影的质感，画面整体具有强烈的东方美学意蕴，融合了传统服饰、自然元素与现代审美，既像一幅工笔画，又似一张纪实摄影作品，充满故事感与情感张力，适合用于表达孤独、思念、怀旧或宁静致远的主题，画面中没有多余的装饰物或干扰元素，所有细节都服务于人物的情绪表达和环境氛围的营造，整体呈现出一种含蓄内敛、耐人寻味的艺术美感",
+   "clip": [
+    "133",
+    0
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "提示词",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "130": {
+  "inputs": {
+   "text": "worst quality, bad anatomy, watermark, jpeg artifact\n\n",
+   "clip": [
+    "133",
+    0
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "负面提示词",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "132": {
+  "inputs": {
+   "seed": -1
+  },
+  "class_type": "Seed (rgthree)",
+  "_meta": {
+   "title": "Seed (rgthree)",
+   "cnr_id": "rgthree-comfy",
+   "aux_id": "rgthree/rgthree-comfy",
+   "ver": "8ff50e4521881eca1fe26aec9615fc9362474931"
+  }
+ },
+ "133": {
+  "inputs": {
+   "clip_name": "qwen3.5_9b_int8_convrot.safetensors",
+   "type": "moss_image",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "加载CLIP",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "134": {
+  "inputs": {
+   "unet_name": "moss_image_sft_bf16.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader",
+  "_meta": {
+   "title": "UNet加载器",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "138": {
+  "inputs": {
+   "samples": [
+    "122",
+    0
+   ],
+   "vae": [
+    "128",
+    0
+   ]
+  },
+  "class_type": "VAEDecode",
+  "_meta": {
+   "title": "VAE解码",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "141": {
+  "inputs": {
+   "filename_prefix": "Moss-双采",
+   "images": [
+    "138",
+    0
+   ]
+  },
+  "class_type": "SaveImage",
+  "_meta": {
+   "title": "保存图像",
+   "cnr_id": "comfy-core",
+   "ver": "0.41.0"
+  }
+ },
+ "158": {
+  "inputs": {
+   "double_layers": "",
+   "single_layers": "22",
+   "start_percent": 0,
+   "end_percent": 0.5,
+   "model": [
+    "134",
+    0
+   ]
+  },
+  "class_type": "SkipLayerGuidanceDiTSimple",
+  "_meta": {
+   "title": "跳过层引导（DiT简化）",
+   "cnr_id": "comfy-core",
+   "ver": "0.42.0"
+  }
+ }
+}

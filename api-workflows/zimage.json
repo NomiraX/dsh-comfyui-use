@@ -1,0 +1,332 @@
+{
+ "103": {
+  "inputs": {
+   "seed": [
+    "162",
+    0
+   ],
+   "steps": 7,
+   "cfg": 1,
+   "sampler_name": "res_multistep",
+   "scheduler": "simple",
+   "denoise": 1,
+   "model": [
+    "111",
+    0
+   ],
+   "positive": [
+    "127",
+    0
+   ],
+   "negative": [
+    "133",
+    0
+   ],
+   "latent_image": [
+    "113",
+    0
+   ]
+  },
+  "class_type": "KSampler",
+  "_meta": {
+   "title": "K采样器",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "108": {
+  "inputs": {
+   "samples": [
+    "161",
+    0
+   ],
+   "vae": [
+    "129",
+    0
+   ]
+  },
+  "class_type": "VAEDecode",
+  "_meta": {
+   "title": "VAE解码",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "111": {
+  "inputs": {
+   "shift": 3,
+   "sampling": "flow",
+   "model": [
+    "158",
+    0
+   ]
+  },
+  "class_type": "ModelSamplingAuraFlow",
+  "_meta": {
+   "title": "采样算法（AuraFlow）",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "113": {
+  "inputs": {
+   "width": [
+    "168",
+    0
+   ],
+   "height": [
+    "168",
+    1
+   ],
+   "batch_size": 1
+  },
+  "class_type": "EmptySD3LatentImage",
+  "_meta": {
+   "title": "空Latent图像（SD3）",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "127": {
+  "inputs": {
+   "text": [
+    "208",
+    0
+   ],
+   "clip": [
+    "130",
+    0
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "CLIP文本编码",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "128": {
+  "inputs": {
+   "unet_name": "z_image_turbo_bf16.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader",
+  "_meta": {
+   "title": "UNet加载器",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "129": {
+  "inputs": {
+   "vae_name": "ae.safetensors"
+  },
+  "class_type": "VAELoader",
+  "_meta": {
+   "title": "加载VAE",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "130": {
+  "inputs": {
+   "clip_name": "qwen_3_4b.safetensors",
+   "type": "lumina2",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "加载CLIP",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "133": {
+  "inputs": {
+   "conditioning": [
+    "127",
+    0
+   ]
+  },
+  "class_type": "ConditioningZeroOut",
+  "_meta": {
+   "title": "条件零化",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "158": {
+  "inputs": {
+   "lora_name": "Kook_Zimage_瑶光.safetensors",
+   "strength_model": 0.2,
+   "model": [
+    "128",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly",
+  "_meta": {
+   "title": "LoRA加载器（仅模型）",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "160": {
+  "inputs": {
+   "upscale_method": "bilinear",
+   "scale_by": 1.5,
+   "samples": [
+    "103",
+    0
+   ]
+  },
+  "class_type": "LatentUpscaleBy",
+  "_meta": {
+   "title": "缩放Latent（比例）",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "161": {
+  "inputs": {
+   "seed": 608045979590736,
+   "steps": 5,
+   "cfg": 1,
+   "sampler_name": "res_multistep",
+   "scheduler": "simple",
+   "denoise": 0.4,
+   "model": [
+    "111",
+    0
+   ],
+   "positive": [
+    "127",
+    0
+   ],
+   "negative": [
+    "133",
+    0
+   ],
+   "latent_image": [
+    "160",
+    0
+   ]
+  },
+  "class_type": "KSampler",
+  "_meta": {
+   "title": "K采样器",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "162": {
+  "inputs": {
+   "seed": 207723774372282
+  },
+  "class_type": "Seed (rgthree)",
+  "_meta": {
+   "title": "Seed (rgthree)",
+   "cnr_id": "rgthree-comfy",
+   "ver": "1.0.2610300006"
+  }
+ },
+ "168": {
+  "inputs": {
+   "aspect_ratio": "9:16 (Portrait Widescreen)",
+   "megapixels": 1,
+   "multiple": 32
+  },
+  "class_type": "ResolutionSelector",
+  "_meta": {
+   "title": "分辨率选择器",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "179": {
+  "inputs": {
+   "filename_prefix": "zimage2_seedvr2",
+   "images": [
+    "108",
+    0
+   ]
+  },
+  "class_type": "SaveImage",
+  "_meta": {
+   "title": "保存",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "205": {
+  "inputs": {
+   "value": "真人 Cosplay 棚拍全身照，9:16 竖幅。一位18岁女 coser 扮演 GPT 白龙娘，正面站立，腰胯略微侧转，一只脚从裙衩中向前迈出半步。她微微低头，淡紫色眼睛直视镜头，双唇轻合，神情安静，带一点清冷感。银白色长发垂到腰下，厚刘海在眉间自然分开，头顶翘起一缕弯曲的呆毛。头部两侧各长出一只象牙白龙角，角向上弯曲、尖端内收，表面有层叠的鳞甲纹。画面右侧的尖耳从发间露出，耳上方别着一枚黑边白底的六环交织绳结发饰，耳侧垂着细银链。\n\n她穿珍珠白高领挂脖礼服，肩头裸露，胸前交叉系带，收腰裙身两侧以银灰细边勾出弧线。两枚与发饰同款的绳结徽章扣在左右胯侧，中间垂着一道细银腰链，链上错落挂着菱形银饰和白色流苏。长裙在画面左侧高开衩，露出银色腿环和白色尖头高跟鞋，另一侧裙摆铺展至地面。独立长袖固定在上臂银环上，白色薄纱从手臂外侧层层垂落，翻折处露出淡紫色内衬。\n\n她靠画面左侧的手轻拈锁骨旁的一缕白发，另一只手向画面右侧伸出，掌心微微朝上，指尖上方悬着一团巴掌大的浅蓝色云朵精灵，只有两只深蓝色椭圆眼睛。背后一对浅紫白色膜翼从肩胛两侧向外舒展，翼骨细而清晰。一条覆着珍珠白菱形鳞片的粗长龙尾从身后绕向画面右侧，在裙后形成清楚的弧线。\n\n浅灰色无缝摄影棚背景，柔和侧光照亮脸颊、银饰和龙鳞，淡紫色轮廓光让白发、膜翼与白裙的边缘彼此分明。保留真人皮肤纹理、假发的细发丝、缎面裙褶和薄纱透光感。平视拍摄，从龙角尖到鞋尖完整入镜，两侧为翼尖留出空间。"
+  },
+  "class_type": "PrimitiveStringMultiline",
+  "_meta": {
+   "title": "画面描述（在这里填写）",
+   "cnr_id": "comfy-core",
+   "ver": "0.36.0"
+  }
+ },
+ "206": {
+  "inputs": {
+   "string_a": "你是一位被关在逻辑牢笼里的幻视艺术家。你满脑子都是诗和远方，但双手却不受控制地只想将用户的提示词，转化为一段忠实于原始意图、细节饱满、富有美感、可直接被文生图模型使用的终极视觉描述。任何一点模糊和比喻都会让你浑身难受。\n\n你的工作流程严格遵循一个逻辑序列：\n\n首先，你会分析并锁定用户提示词中不可变更的核心要素：主体、数量、动作、状态，以及任何指定的IP名称、颜色、文字等。这些是你必须绝对保留的基石。\n\n接着，你会判断提示词是否需要**\"生成式推理\"**。当用户的需求并非一个直接的场景描述，而是需要构思一个解决方案（如回答\"是什么\"，进行\"设计\"，或展示\"如何解题\"）时，你必须先在脑中构想出一个完整、具体、可被视觉化的方案。这个方案将成为你后续描述的基础。\n\n然后，当核心画面确立后（无论是直接来自用户还是经过你的推理），你将为其注入专业级的美学与真实感细节。这包括明确构图、设定光影氛围、描述材质质感、定义色彩方案，并构建富有层次感的空间。\n\n最后，是对所有文字元素的精确处理，这是至关重要的一步。你必须一字不差地转录所有希望在最终画面中出现的文字，并且必须将这些文字内容用英文双引号（\"\"）括起来，以此作为明确的生成指令。如果画面属于海报、菜单或UI等设计类型，你需要完整描述其包含的所有文字内容，并详述其字体和排版布局。同样，如果画面中的招牌、路标或屏幕等物品上含有文字，你也必须写明其具体内容，并描述其位置、尺寸和材质。更进一步，若你在推理构思中自行增加了带有文字的元素（如图表、解题步骤等），其中的所有文字也必须遵循同样的详尽描述和引号规则。若画面中不存在任何需要生成的文字，你则将全部精力用于纯粹的视觉细节扩展。\n\n你的最终描述必须客观、具象，严禁使用比喻、情感化修辞，也绝不包含\"8K\"、\"杰作\"等元标签或绘制指令。\n\n仅严格输出最终的修改后的prompt，不要输出任何其他内容。\n\n用户输入 prompt: ",
+   "string_b": [
+    "205",
+    0
+   ],
+   "delimiter": ""
+  },
+  "class_type": "StringConcatenate",
+  "_meta": {
+   "title": "Z-Image 官方系统提示词",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ },
+ "207": {
+  "inputs": {
+   "clip_name": "qwen3.5_9b_int8_convrot.safetensors",
+   "type": "qwen_image",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "提示词改写模型 · Qwen3.5 9B",
+   "cnr_id": "comfy-core",
+   "ver": "0.36.0"
+  }
+ },
+ "208": {
+  "inputs": {
+   "prompt": " ",
+   "max_length": 1024,
+   "sampling_mode": "on",
+   "sampling_mode.temperature": 0.7,
+   "sampling_mode.top_k": 20,
+   "sampling_mode.top_p": 0.8,
+   "sampling_mode.min_p": 0,
+   "sampling_mode.repetition_penalty": 1.0000000000000002,
+   "sampling_mode.seed": 0,
+   "sampling_mode.presence_penalty": 0,
+   "thinking": false,
+   "use_default_template": true,
+   "mtp": "auto",
+   "clip": [
+    "207",
+    0
+   ],
+   "system_prompt": [
+    "206",
+    0
+   ]
+  },
+  "class_type": "TextGenerate",
+  "_meta": {
+   "title": "改写为 Z-Image 正向提示词",
+   "cnr_id": "comfy-core",
+   "ver": "0.46.2"
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "KSampler": [
+  "103",
+  "161"
+ ],
+ "VAEDecode": [
+  "108"
+ ],
+ "ModelSamplingAuraFlow": [
+  "111"
+ ],
+ "EmptySD3LatentImage": [
+  "113"
+ ],
+ "CLIPTextEncode": [
+  "127"
+ ],
+ "UNETLoader": [
+  "128"
+ ],
+ "VAELoader": [
+  "129"
+ ],
+ "CLIPLoader": [
+  "130",
+  "207"
+ ],
+ "ConditioningZeroOut": [
+  "133"
+ ],
+ "LoraLoaderModelOnly": [
+  "158"
+ ],
+ "LatentUpscaleBy": [
+  "160"
+ ],
+ "Seed (rgthree)": [
+  "162"
+ ],
+ "ResolutionSelector": [
+  "168"
+ ],
+ "SaveImage": [
+  "179"
+ ],
+ "PrimitiveStringMultiline": [
+  "205"
+ ],
+ "StringConcatenate": [
+  "206"
+ ],
+ "TextGenerate": [
+  "208"
+ ]
+}

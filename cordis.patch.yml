@@ -1,0 +1,21 @@
+# dsh-comfyui-use —— bundle 自带补丁层
+#
+# 用官方 plugin_manager 的 install_bundle 装本包时，这一层会被应用；
+# 手工安装等价于在 profile 的 cordis.patch.yml 里加同样一条 insert。
+#
+# 这里的 config 是「安装时的默认值」，都会写进 profile。
+# 想改自己机器上的路径，不要改这个文件，改 $DSH_HOME/dsh-comfyui-use-config.json
+# （见 README「配置」一节），它优先于这里的值、且不会进 git。
+#
+#   comfyUrl        ComfyUI 地址；留空 = http://127.0.0.1:<port> 自动拼
+#   comfyRoot       ComfyUI 目录（含 main.py）；留空 = 自动探测
+#   outputDir       成品落盘目录，默认 %USERPROFILE%\Pictures\dsh-comfyui
+#   workflow        界面默认选中的工作流，'auto' 表示按需求自动挑
+#   idleShutdownMs  空闲多久自动关停 ComfyUI（毫秒），0 = 永不关
+- insert:
+    - id: comfyui-use
+      name: 'dsh-comfyui-use'
+      config:
+        workflow: 'auto'
+        idleShutdownMs: 60000
+        timeoutMs: 900000

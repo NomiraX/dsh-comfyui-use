@@ -1,0 +1,10 @@
+node_modules/
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+# 本机私有配置（路径、端口），不要提交
+dsh-comfyui-use-config.json
+# 出图产物与临时参考图
+dsh-comfyui/
+dsh-comfyui-refs/

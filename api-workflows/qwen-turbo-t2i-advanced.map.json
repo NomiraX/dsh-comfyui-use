@@ -1,0 +1,55 @@
+{
+ "UNETLoader": [
+  "2"
+ ],
+ "CLIPLoader": [
+  "3",
+  "160"
+ ],
+ "VAELoader": [
+  "4"
+ ],
+ "QwenImage21Cache": [
+  "7"
+ ],
+ "VAEDecode": [
+  "9"
+ ],
+ "SaveImage": [
+  "10"
+ ],
+ "PrimitiveStringMultiline": [
+  "13",
+  "229"
+ ],
+ "TextEncodeQwenImage21": [
+  "37"
+ ],
+ "EmptyLatentImage": [
+  "38"
+ ],
+ "ResolutionSelector": [
+  "39"
+ ],
+ "PrimitiveInt": [
+  "42"
+ ],
+ "TextGenerate": [
+  "162"
+ ],
+ "RandomNoise": [
+  "224"
+ ],
+ "KSamplerSelect": [
+  "225"
+ ],
+ "CFGGuider": [
+  "226"
+ ],
+ "ManualSigmas": [
+  "227"
+ ],
+ "SamplerCustomAdvanced": [
+  "228"
+ ]
+}
